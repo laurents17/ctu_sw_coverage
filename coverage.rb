@@ -1,11 +1,7 @@
 # one file which defines the actions that the server can respond to.
-=begin
-require 'sinatra' # load sinatra
- require 'sinatra/reloader' # prevents having to restart app
- require 'sqlite' # gem to connect to the database
 
  # connect to the database file "filename.db"
- db = SQLite3::Database.new('filename.db')
+
 
  # Define the Endpoints
  # this will be all the possible requests sinatra will respond to
@@ -24,8 +20,10 @@ require 'sinatra' # load sinatra
  delete '/path4' do
  end
  
- =end
  
- require 'sinatra' # load sinatra
- require 'sinatra/reloader' # prevents having to restart app
- require 'sqlite' # gem to connect to the database
+ 
+require 'sinatra' # load sinatra
+require 'sinatra/reloader' # prevents having to restart app
+require 'sqlite' # gem to connect to the database
+ 
+db = SQLite3::Database.new('.db')

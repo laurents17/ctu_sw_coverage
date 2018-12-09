@@ -1,0 +1,27 @@
+</div>
+  
+  
+  <h2>Submit New Coverage Request</h2>
+
+  <div class="container">
+<form>
+    <form action="/pending" method="post" target="_pending">
+        <p>Your Name</p>
+        <input type="text" name="name">
+        <p>Date</p>
+        <input type="date" name="date">
+        <p>Time</p>
+        <input type="dropdown" name="start" placeholder="Start">
+        <br>
+        <input type="dropdown" name="end" placeholder="End">
+        <br><br>
+        To Do
+        <input type="radio" name="ntd" value="NTD"> NTD
+        <br><br>
+        <textarea name="todo" rows="8" cols= "40">Describe tasks, no PHI please</textarea>
+        <br><br>
+        <input type="submit" name="Submit">
+        <button type="reset" value="Reset">Reset</button>
+     </form>
+ </div>
+

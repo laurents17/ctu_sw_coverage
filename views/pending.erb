@@ -1,0 +1,20 @@
+<div>
+    <h4>Pending requests</h4>
+    <% @requests.each do |r| %>
+    <div>
+    <p>Request</p>
+        <p>Requested by: <%= r.ooh_name %></p>
+        <p>Start: <%= r.startdate %> at <%= r.starttime %></p>
+        <p>End: <%= r.enddate %> at <%= r.endtime %></p>
+<!--        <li><a href="/signup">Sign up to cover</a></li> -->
+        <form action='/signup' method='post'>
+            <input type="text" name="cov_name" placeholder="Your Name">
+            <input type="submit" text="Cover Me">
+        
+        </form>
+    </ul>
+    <% end %>
+
+</div>
+
+<!-- Load requests that are not yet covered (:cov_name = nil)? -->

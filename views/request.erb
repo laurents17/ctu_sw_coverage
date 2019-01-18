@@ -1,27 +1,26 @@
 </div>
   
-  
   <h2>Submit New Coverage Request</h2>
 
   <div class="container">
-<form>
-    <form action="/pending" method="post" target="_pending">
+    <form action="/request" method="post">
         <p>Your Name</p>
-        <input type="text" name="name">
-        <p>Date</p>
-        <input type="date" name="date">
-        <p>Time</p>
-        <input type="dropdown" name="start" placeholder="Start">
-        <br>
-        <input type="dropdown" name="end" placeholder="End">
+        <input type="text" name="ooh_name">
+        <p>Start Date</p>
+        <input type="date" name="startdate">
+        <p>End Date</p>
+        <input type="date" name="enddate">
+        <p>Start Time</p>
+        <input type="text" name="starttime" placeholder="Start">
+        <p>End Time</p>
+        <input type="text" name="endtime" placeholder="End">
         <br><br>
-        To Do
-        <input type="radio" name="ntd" value="NTD"> NTD
-        <br><br>
+        <p>To Do</p>
         <textarea name="todo" rows="8" cols= "40">Describe tasks, no PHI please</textarea>
         <br><br>
         <input type="submit" name="Submit">
         <button type="reset" value="Reset">Reset</button>
-     </form>
- </div>
+    </form>
+  </div>
+</div>
 

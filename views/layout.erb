@@ -4,9 +4,19 @@
         <title>CTU SW Coverage</title>
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Sigmar+One" />
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Questrial" />
+        <link rel="stylesheet" type="text/css" href="/styles.css">
     </head>
     <body>
         <h1>CTU SW Coverage</h1>
         <%= yield %>
+        
+         <div class="container">
+            <h4>Options</h4>
+                <a href="/request">Submit New Request</a>
+<!--            <a href="/edit?id=<   #    %= _____________ %>">Edit a Pending Request</p> --> 
+                <a href="/calendar">View Calendar</a>
+                <a href="/signup">View Pending Requests</a>                
+         </div>   
+
     </body>
 </html>

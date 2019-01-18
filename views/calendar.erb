@@ -1,0 +1,18 @@
+<%# erb file to render the calendar with indications for pending and accepted requests, links to sign up %>
+
+<%# code to display calendar with indicators of pending and accepted requests (colored dots on days)%>
+<h2>Calendar</h2>
+
+<%# container to hold pending request information corresponding with colored dots in calendar... the code below does not work;
+it was moved to pending.erb and edited to be functional%>
+<div>
+    <h4>Pending requests</h4>
+    <% @requests.each do |r| %>
+    <ul>
+        <li>Requested by: <%= r.ooh_name %></li>
+        <li>Start: <%= r.startdate %> at <%= r.starttime %></li>
+        <li>End: <%= r.enddate %> at <%= r.endtime %></li>
+    </ul>
+    <% end %>
+    <a href="/signup">Sign up to cover</a>
+</div>
